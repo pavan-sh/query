@@ -176,7 +176,7 @@ others:
       description: '🥬 OpenAPI to React Query (or SWR) & Axios',
     },
     {
-      title: 'Tanstack Query Visualizer',
+      title: 'TanStack Query Visualizer',
       url: 'https://tanstack-query-visualizer.sofi.coop/',
       description: 'An interactive sandbox that visualizes the relationship between mutations and query keys.',
     },

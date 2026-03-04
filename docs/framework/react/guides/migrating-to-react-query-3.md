@@ -410,7 +410,7 @@ setConsole({
 
 In version 3 **this is done automatically when React Query is used in React Native**.
 
-### Typescript
+### TypeScript
 
 #### `QueryStatus` has been changed from an [enum](https://www.typescriptlang.org/docs/handbook/enums.html#string-enums) to a [union type](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types)
 
