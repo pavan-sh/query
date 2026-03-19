@@ -88,7 +88,10 @@ function Posts(props: { setPostId: Setter<number> }) {
                   {(post: any) => (
                     <p>
                       <a
-                        onClick={() => props.setPostId(post.id)}
+                        onClick={(e) => {
+                          e.preventDefault()
+                          props.setPostId(post.id)
+                        }}
                         href="#"
                         style={
                           // We can find the existing query data here to show bold links for
@@ -145,7 +148,13 @@ function Post(props: { postId: number; setPostId: Setter<number> }) {
   return (
     <div>
       <div>
-        <a onClick={() => props.setPostId(-1)} href="#">
+        <a
+          onClick={(e) => {
+            e.preventDefault()
+            props.setPostId(-1)
+          }}
+          href="#"
+        >
           Back
         </a>
       </div>

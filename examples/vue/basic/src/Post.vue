@@ -31,7 +31,7 @@ export default defineComponent({
 
 <template>
   <h1>Post {{ postId }}</h1>
-  <a @click="$emit('setPostId', -1)" href="#"> Back </a>
+  <a @click.prevent="$emit('setPostId', -1)" href="#"> Back </a>
   <div v-if="isPending" class="update">Loading...</div>
   <div v-else-if="isError">An error has occurred: {{ error }}</div>
   <div v-else-if="data">

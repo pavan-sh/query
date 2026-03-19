@@ -55,7 +55,10 @@ function Posts({
               {data.map((post) => (
                 <p key={post.id}>
                   <a
-                    onClick={() => setPostId(post.id)}
+                    onClick={(e) => {
+                      e.preventDefault()
+                      setPostId(post.id)
+                    }}
                     href="#"
                     style={
                       // We can access the query data here to show bold links for
@@ -108,7 +111,13 @@ function Post({
   return (
     <div>
       <div>
-        <a onClick={() => setPostId(-1)} href="#">
+        <a
+          onClick={(e) => {
+            e.preventDefault()
+            setPostId(-1)
+          }}
+          href="#"
+        >
           Back
         </a>
       </div>

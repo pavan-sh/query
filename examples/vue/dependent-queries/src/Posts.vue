@@ -37,7 +37,7 @@ export default defineComponent({
     <ul>
       <li v-for="item in data" :key="item.id">
         <a
-          @click="$emit('setPostId', item.id)"
+          @click.prevent="$emit('setPostId', item.id)"
           href="#"
           :class="{ visited: isVisited(item.id) }"
           >{{ item.title }}</a
